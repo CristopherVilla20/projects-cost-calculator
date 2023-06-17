@@ -11,10 +11,10 @@ function funcionPredeterminada() {
         let valorInterfazPorHora = interfazHorasHTML.value;
         
         let interfazTestHTML = document.getElementById("interfazTest");
-        let valorInterfazTest = interfazHorasHTML.value;
+        let valorInterfazTest = interfazTestHTML.value;
         
         let valorTotalHTML = document.getElementById("valorTotal");
-        valorTotalHTML.value = 50;
+        valorTotalHTML.value = (valorPorHora * valorInterfazPorHora) + (valorPorHora * valorInterfazTest) ;
 
 
     });
